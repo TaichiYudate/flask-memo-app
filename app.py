@@ -53,9 +53,5 @@ def list_memos():
     conn.close()
     return render_template("list.html", memos=memos)
 
-if __name__ == "__main__":
-    init_db()
-    app.run(debug=True)
-
-import os
-print("📁 現在のテンプレートパス:", os.getcwd())
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
