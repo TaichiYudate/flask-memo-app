@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/3275/3275187.png" alt="メモアイコン" width="100" class="mb-4">
+
+    <h2 class="display-5 fw-bold">ようこそ、Flaskメモアプリへ📝</h2>
+    <p class="lead mt-3">ひらめきを逃さない。<br>あなたのアイデア、ここにメモしよう。</p>
+
+    <div class="d-grid gap-3 col-6 mx-auto mt-4">
+      <a href="{{ url_for('add') }}" class="btn btn-success btn-lg">➕ メモを追加する</a>
+      <a href="{{ url_for('list_memos') }}" class="btn btn-outline-primary btn-lg">📋 メモ一覧を見る</a>
+    </div>
+  </div>
+{% endblock %}
+

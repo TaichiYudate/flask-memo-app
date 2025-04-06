@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .memo-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .memo-time {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .memo-category {
+    background-color: #dedede;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #f8f9fa, #e3f2fd);
+  }
+  

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2>メモ一覧</h2>
+  {% if memos %}
+    <div class="row">
+      {% for memo in memos %}
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <div class="memo-title">{{ memo[1] }}</div>
+            <div class="memo-time">{{ memo[4] }}</div>
+            <p>{{ memo[2] }}</p>
+            <span class="memo-category">{{ memo[3] or 'カテゴリなし' }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>まだメモがありません。</p>
+  {% endif %}
+{% endblock %}
